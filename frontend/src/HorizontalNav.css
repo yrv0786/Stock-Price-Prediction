@@ -1,0 +1,84 @@
+.HorizontalNav {
+	position: sticky;
+	top: 0px;
+	background: white !important;
+	z-index: 100;
+}
+
+.HorizontalNav-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	padding: 1.7rem 2.5rem;
+}
+
+.HorizontalNav-logo i {
+	margin: 0 1.1rem 0 2.1rem;
+	font-size: 1.2em;
+}
+
+.HorizontalNav-logo p {
+	display: inline;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 1.2em;
+}
+
+.HorizontalNav-user-details sup {
+	position: absolute;
+	padding: 9px;
+	border-radius: 50%;
+	background-color: #e68933;
+	font-size: 10px;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	top: 10px;
+	right: 115px;
+}
+
+.HorizontalNav-user-details {
+	justify-self: end;
+	display: flex;
+	align-items: center;
+	margin-right: 2.1rem;
+}
+
+.HorizontalNav-user-details i {
+	background-color: rgb(240, 240, 240);
+	color: gray;
+	border-radius: 50%;
+	padding: 0.9em;
+	font-size: 0.7em;
+	margin-right: 10px;
+}
+
+.HorizontalNav-user-details>div {
+	margin-left: 5px;
+	height: 2.1rem;
+	width: 2.1rem;
+	border-radius: 50%;
+	background: url(./profilePhoto.jpg) no-repeat center center/cover;
+}
+
+@media (max-width: 815px) {
+	.HorizontalNav {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.HorizontalNav-container {
+		grid-template-columns: 1fr;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.HorizontalNav-user-details {
+		display: none;
+	}
+
+	.HorizontalNav-logo {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+	}
+}

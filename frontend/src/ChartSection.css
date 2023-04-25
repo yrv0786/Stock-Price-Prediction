@@ -1,0 +1,44 @@
+div.recharts-responsive-container {
+	height: 400px !important;
+	width: 50% !important;
+}
+
+div.recharts-responsive-container svg {
+	height: inherit !important;
+}
+
+.Line-Charts {
+	padding: 1.7rem 2.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Bar-Graph {
+	padding: 1.7rem 2.5rem;
+}
+
+div.recharts-responsive-container {
+	height: 400px !important;
+	width: 100% !important;
+}
+
+.charts-div-2{
+	margin-bottom: 3rem;
+}
+
+/* responsive */
+@media (max-width: 1098px) {
+	.Line-Charts {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 421px) {
+	.Bar-Graph, .Line-Charts {
+		padding: 1.7rem 0;
+	}	
+}
+
+circle.recharts-dot.recharts-line-dot{
+	display: none !important;
+}
